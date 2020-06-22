@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6A9F1"
+    tools:context=".presentation.intro.IntroActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/intro_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TableLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:tabIndicator="@drawable/tab_indicator_selected"
+        android:tabBackground="@drawable/tab_indicator_default"
+        android:layout_centerHorizontal="true"
+        android:tabIndicatorColor="#4F17B3"
+        android:layout_marginBottom="40dp"
+        android:tabGravity="center" />
+
+    <Button
+        android:id="@+id/intro_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="#C311E3"
+        android:layout_alignBottom="@+id/tabLayout"
+        android:text="Next"/>
+
+    <Button
+        android:id="@+id/intro_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="#C311E3"
+        android:layout_alignBottom="@+id/tabLayout"
+        android:text="Skip"
+        />
+
+</RelativeLayout>
