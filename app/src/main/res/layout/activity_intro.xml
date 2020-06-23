@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/relativelayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,39 +14,57 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <TableLayout
+    <ImageView
+        android:id="@+id/image_intro"
+        android:layout_width="350dp"
+        android:layout_height="566dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/a"
+        android:layout_marginBottom="60dp" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textAllCaps="false"
+    android:textSize="30dp"
+    android:layout_marginTop="30dp"
+    android:textStyle="bold"
+    android:text="Welcome"/>
+
+    <Button
+        android:id="@+id/intro_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="32dp"
+        android:textSize="22dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button"
+        android:text="Skip" />
+
+<com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="20dp"
         android:layout_alignParentBottom="true"
-        android:tabIndicator="@drawable/tab_indicator_selected"
-        android:tabBackground="@drawable/tab_indicator_default"
+        app:tabIndicator="@drawable/tab_indicator_selected"
+        app:tabBackground="@drawable/tab_indicator_default"
         android:layout_centerHorizontal="true"
-        android:tabIndicatorColor="#4F17B3"
+        app:tabIndicatorColor="#4C078A"
         android:layout_marginBottom="40dp"
-        android:tabGravity="center" />
+        app:tabGravity="center" />
 
     <Button
         android:id="@+id/intro_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:textStyle="bold"
+        android:textSize="22dp"
         android:textAllCaps="false"
-        android:background="#C311E3"
+        android:background="@drawable/button"
         android:layout_alignBottom="@+id/tabLayout"
         android:text="Next"/>
-
-    <Button
-        android:id="@+id/intro_skip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:background="#C311E3"
-        android:layout_alignBottom="@+id/tabLayout"
-        android:text="Skip"
-        />
 
 </RelativeLayout>

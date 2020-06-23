@@ -3,12 +3,12 @@
 
     android:innerRadius="1dp"
     android:shape="ring"
-    android:thickness="3dp"
+    android:thickness="7dp"
     android:useLevel="false"
 
 android:thicknessRatio="@integer/config_navAnimTime"
     >
 
-    <solid android:color = "#C12929"/>
+    <solid android:color = "#6B11A3"/>
 
 </shape>

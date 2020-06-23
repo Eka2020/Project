@@ -1,15 +1,12 @@
 package com.example.project.presentation.intro;
 
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.project.R;
 
 public class IntroFragment extends Fragment {
@@ -35,8 +32,5 @@ public class IntroFragment extends Fragment {
         //TODO: Init views
         int position=getArguments().getInt(ARG_POSITION);
 
-        switch (position){
-            //TODO:
-        }
     }
 }

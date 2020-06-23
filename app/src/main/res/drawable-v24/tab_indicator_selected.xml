@@ -3,8 +3,7 @@
     android:innerRadius="0dp"
 
     android:shape="ring"
-    android:thickness="4dp"
-
+    android:thickness="7dp"
 
     android:useLevel="false">
     <size android:height="7dp"/>
