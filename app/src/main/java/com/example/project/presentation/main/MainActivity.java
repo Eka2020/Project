@@ -1,10 +1,8 @@
 package com.example.project.presentation.main;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-
 import com.example.project.AppPref;
 import com.example.project.R;
 import com.example.project.presentation.intro.IntroActivity;
@@ -21,7 +19,5 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         setContentView(R.layout.activity_main);
-
-
-
-    }}
+    }
+}

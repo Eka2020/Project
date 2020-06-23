@@ -1,18 +1,18 @@
 package com.example.project;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 
 public class AppPref {
     private SharedPreferences sharedPreferences;
-    private  static volatile AppPref place;
+    private  static volatile AppPref instance;
     public AppPref(Context context){
-        place =this;
+        instance =this;
         sharedPreferences = context.getSharedPreferences("settings",Context.MODE_PRIVATE);
     }
+
     public static AppPref getInstance(Context context){
-        if (place == null) new AppPref(context);
-        return place;
+        if (instance == null) new AppPref(context);
+        return instance;
     }
 
     public boolean isShown(){

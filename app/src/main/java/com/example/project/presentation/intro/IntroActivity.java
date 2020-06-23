@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,12 +13,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-
 import com.example.project.AppPref;
 import com.example.project.R;
 import com.example.project.presentation.main.MainActivity;
 import com.google.android.material.tabs.TabLayout;
-
 import static com.example.project.R.color.colorFiolet;
 import static com.example.project.R.color.colorPurpure;
 import static com.example.project.R.color.colorlitePurpure;
@@ -39,10 +36,11 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
         tabLayout = findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager, true);
+
         intro_next = findViewById(R.id.intro_next);
         intro_skip = findViewById(R.id.intro_skip);
         imageView = findViewById(R.id.image_intro);
-        relativeLayout=findViewById(R.id.relativelayout);
+        relativeLayout=findViewById(R.id.relativeLayout);
 
         intro_next.setOnClickListener(new View.OnClickListener() {
             @Override
