@@ -13,12 +13,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import com.example.project.AppPref;
+import com.example.project.data.AppPref;
 import com.example.project.R;
 import com.example.project.presentation.main.MainActivity;
 import com.google.android.material.tabs.TabLayout;
 import static com.example.project.R.color.colorFiolet;
-import static com.example.project.R.color.colorPurpure;
 import static com.example.project.R.color.colorlitePurpure;
 
 public class IntroActivity extends AppCompatActivity {
@@ -27,7 +26,6 @@ public class IntroActivity extends AppCompatActivity {
     TabLayout tabLayout;
     RelativeLayout relativeLayout;
     ImageView imageView;
-    boolean appPref;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -73,7 +71,7 @@ public class IntroActivity extends AppCompatActivity {
                         intro_next.setVisibility(View.VISIBLE);
                         intro_next.setText("Next");
                         imageView.setImageResource(R.drawable.a);
-                        relativeLayout.setBackgroundColor(colorPurpure);
+                        relativeLayout.setBackgroundColor(colorFiolet);
                         break;
                     case 1:
                         intro_next.setText("Next");
